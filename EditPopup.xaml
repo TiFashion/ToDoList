@@ -1,0 +1,26 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="ToDoListApp.EditPopup"
+        Title="Редактировать" Height="Auto" Width="Auto" WindowStyle="ToolWindow" 
+        WindowStartupLocation="CenterOwner" SizeToContent="WidthAndHeight"
+        ShowInTaskbar="False" ResizeMode="NoResize" Closing="Window_Closing" d:DesignWidth="140.312" d:DesignHeight="87.125">
+    <Grid>
+        <StackPanel>
+            <TextBlock><Run Text="Описание:"/></TextBlock>
+            <TextBox Text="{Binding Description, Mode=TwoWay}"/>
+            <Grid HorizontalAlignment="Stretch">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Grid.Background>
+                    <ImageBrush ImageSource="fon.png"/>
+                </Grid.Background>
+                <Button IsDefault="True" Grid.Column="0" Click="OK_Click" Content="Ок"/>
+                <Button IsCancel="True" Grid.Column="2" Content="Отмена"/>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Window>
