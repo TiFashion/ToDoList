@@ -9,7 +9,7 @@
             <MenuItem Header="Редактировать" Click="EditMenu_Click"/>
             <MenuItem Header="Отметить как выполненное" Click="MarkAsDone"/>
             <TextBlock/>
-            <MenuItem Header="_Delete" Click="Delete_Click"/>
+            <MenuItem Header="Удалить" Click="Delete_Click"/>
         </ContextMenu>
     </Window.Resources>
     <Grid>
