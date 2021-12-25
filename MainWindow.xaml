@@ -6,10 +6,10 @@
         Title="Заметки:" SizeToContent="Width" Height="400"  Closing="Window_Closing" ResizeMode="CanMinimize" WindowStyle="ToolWindow" Icon="/ToDoList;component/todo.ico" d:DesignWidth="355">
     <Window.Resources>
         <ContextMenu x:Key="itemMenu">
-            <MenuItem Header="_Edit" Click="EditMenu_Click"/>
-            <MenuItem Header="_Mark as done" Click="MarkAsDone"/>
+            <MenuItem Header="Редактировать" Click="EditMenu_Click"/>
+            <MenuItem Header="Отметить как выполненное" Click="MarkAsDone"/>
             <TextBlock/>
-            <MenuItem Header="_Delete" Click="Delete_Click"/>
+            <MenuItem Header="Удалить" Click="Delete_Click"/>
         </ContextMenu>
     </Window.Resources>
     <Grid>
