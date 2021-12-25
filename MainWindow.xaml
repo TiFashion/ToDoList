@@ -7,7 +7,7 @@
     <Window.Resources>
         <ContextMenu x:Key="itemMenu">
             <MenuItem Header="Редактировать" Click="EditMenu_Click"/>
-            <MenuItem Header="_Mark as done" Click="MarkAsDone"/>
+            <MenuItem Header="Отметить как выполненное" Click="MarkAsDone"/>
             <TextBlock/>
             <MenuItem Header="_Delete" Click="Delete_Click"/>
         </ContextMenu>
