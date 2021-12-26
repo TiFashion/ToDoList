@@ -70,7 +70,7 @@ namespace ToDoListApp
             if (DoneDateTime != "")
             {
                 DateTime doneAt = DateTime.Parse(DoneDateTime);
-                result = String.Format("{0} - Done at: {1:yyyy-MM-dd hh:mm}", Description, doneAt);
+                result = String.Format("{0} - Выполнено в: {1:yyyy-MM-dd hh:mm}", Description, doneAt);
             }
             else
             {
