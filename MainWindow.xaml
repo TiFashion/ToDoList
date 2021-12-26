@@ -28,7 +28,7 @@
         <Label Content="Введите заметку:" Grid.Row="1" HorizontalAlignment="Left" Grid.Column="0" x:Name="label1" VerticalAlignment="Center"  />
         <TextBox x:Name="txtItemDesc" Grid.Row="1" Grid.Column="1" />
         <Button Content="Добавить" Grid.Row="1" HorizontalAlignment="right" Grid.Column="2" x:Name="btnAdd" Click="btnAdd_Click" />
-        <CheckBox x:Name="chkShowDone" Grid.Column="1"  Grid.ColumnSpan="2" Grid.Row="2" Content="Показать выполненное" IsChecked="{Binding ShowDoneItems, Mode=TwoWay}"/>
+        <CheckBox x:Name="chkShowDone" Grid.Column="1"  Grid.ColumnSpan="2" Grid.Row="2" Content="Показать выполненное" IsChecked="{Binding ShowDoneItems, Mode=TwoWay}" Checked="chkShowDone_Checked"/>
         <Grid.Background>
             <ImageBrush ImageSource="fon.png"/>
         </Grid.Background>

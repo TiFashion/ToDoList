@@ -48,7 +48,7 @@ namespace ToDoListApp
         {
             if (lvToDo.SelectedItem != null)
             {
-                MessageBoxResult done = MessageBox.Show("Mark this as done?", "Done?", MessageBoxButton.YesNo, MessageBoxImage.Question, MessageBoxResult.No);
+                MessageBoxResult done = MessageBox.Show("Отметить как выполненное?", "Выполненное?", MessageBoxButton.YesNo, MessageBoxImage.Question, MessageBoxResult.No);
                 if (done == MessageBoxResult.Yes)
                 {
                     (lvToDo.SelectedItem as ToDoItem).DoneDateTime = DateTime.Now.ToString("yyyy-MM-ddThh:mm:ss.ms");
@@ -76,13 +76,18 @@ namespace ToDoListApp
         {
             if (lvToDo.SelectedItem != null)
             {
-                MessageBoxResult del = MessageBox.Show("Delete this item?", "Delete?", MessageBoxButton.YesNo, MessageBoxImage.Question, MessageBoxResult.No);
+                MessageBoxResult del = MessageBox.Show("Удалить эту заметку?", "Удалить?", MessageBoxButton.YesNo, MessageBoxImage.Question, MessageBoxResult.No);
                 if (del == MessageBoxResult.Yes)
                 {
                     tdl.DeleteItem(lvToDo.SelectedItem as ToDoItem);
                 }
                 lvToDo.Items.Refresh();
             }
+        }
+
+        private void chkShowDone_Checked(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
